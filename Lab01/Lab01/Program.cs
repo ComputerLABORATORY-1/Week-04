@@ -8,10 +8,9 @@ namespace Lab01
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Data type : int");
-            Console.WriteLine("Size :" + sizeof(int));
-            Console.WriteLine("Minimum Value :" + int.MinValue);
-            Console.WriteLine("Maximum Value :" + int.MaxValue);
+            Random random = new Random();
+            int randomNumber = random.Next(0, 9);
+            Console.WriteLine(randomNumber);
 
         }
     }
