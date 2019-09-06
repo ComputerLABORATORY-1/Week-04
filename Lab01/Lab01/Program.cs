@@ -7,10 +7,11 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-
-            Random random = new Random();
-            int randomNumber = random.Next(0, 9);
-            Console.WriteLine(randomNumber);
+            Console.WriteLine("How old are you?");
+            int age;
+            int.TryParse(Console.ReadLine(), out age);
+           
+            Console.WriteLine("age: {0}", age);
 
         }
     }
