@@ -7,20 +7,18 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            bool A, B, Y;
-            Console.WriteLine("      Y = A AND B");
-            Console.WriteLine("-----------------------");
-            Console.WriteLine("   A      B\t|  Y");
-            Console.WriteLine("-----------------------");
-            A = false; B = false; Y = A & B;
-            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
-            A = false; B = true; Y = A & B;
-            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
-            A = true; B = false; Y = A & B;
-            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
-            A = true; B = true; Y = A & B;
-            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
-            Console.WriteLine("-----------------------");
+            const double lightSpeed = 186000d;   // miles per second
+            Console.WriteLine("Light speed = {0} Mile Per second", lightSpeed);
+            const double mileTokm = 1.609344;
+            Console.WriteLine("Light speed = {0} km Per second", lightSpeed * mileTokm);
+            const double SunToEarthDistance = 93000000d;  // miles
+            Console.WriteLine("SunToEarthDistance = {0} km", SunToEarthDistance * mileTokm);
+            double SunToEarthTimeOfLight = SunToEarthDistance / lightSpeed;  // miles
+            Console.WriteLine("SunToEarthTimeOfLight = {0} seconds", SunToEarthTimeOfLight);
+            Console.WriteLine("SunToEarthTimeOfLight = {0} minutes", SunToEarthTimeOfLight / 60d);
+
+
+
         }
     }
 }
