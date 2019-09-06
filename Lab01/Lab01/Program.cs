@@ -16,7 +16,7 @@ namespace Lab01
             Console.WriteLine("{0, 5}", 1);
             Console.WriteLine("{0, 10}", 1);
             Console.WriteLine("{0, 15}", 1);
-            Console.WriteLine("{0, 20}", 1);
+            Console.WriteLine("{0, 20}", 1); 
 
         }
     }
