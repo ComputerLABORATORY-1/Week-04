@@ -10,7 +10,7 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            //this is Muay
+            Console.Write("Hello");
         }
     }
 }
