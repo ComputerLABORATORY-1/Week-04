@@ -7,12 +7,20 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("How old are you?");
-            int age;
-            int.TryParse(Console.ReadLine(), out age);
-           
-            Console.WriteLine("age: {0}", age);
-
+            bool A, B, Y;
+            Console.WriteLine("      Y = A AND B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
         }
     }
 }
