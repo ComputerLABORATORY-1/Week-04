@@ -13,7 +13,7 @@ namespace Lab01
             Console.WriteLine("{0, 0:G}", n);
             Console.WriteLine("{0, 0:N}", n);
             Console.WriteLine("{0, 0:P}", n);
-            Console.WriteLine("{0, 0:X}", n);
+            Console.WriteLine("{0, 0:X}", n); 
 
         }
     }
